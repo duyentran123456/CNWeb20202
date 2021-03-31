@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Personal Information Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .title-wrapper {
+                font-size: 150%;  
+                font-weight: bold;
+                padding: 5px;
+            }
+            .content-wrapper {
+                width: 800px;
+                margin: 38px auto;
+                padding: 50px 100px 50px 100px;
+                border-radius: 21px;
+                border: 2px solid black;
+            }
+            .input-wrapper>input{
+                display: block;
+                border-radius: 8px;
+                padding: 10px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                width: 100%;              
+            }
+            .input-wrapper>span {
+                padding: 20px;
+            }
+            .input-wrapper>div {
+                padding: 10px;
+            }
+            .input-wrapper>div>label {
+                margin: 10px;
+            }
+            .break {
+                display: none;
+            }
+            .buttons-wrapper {
+                margin: auto;
+            }
+            .buttons-wrapper>input {
+                border: transparent;
+                border-radius: 14px;
+                padding: 10px 20px 10px 20px;                
+                margin: 10px;
+                box-shadow: 0px 0px 5px #bd59d4;
+                background-color: #BD59D4;
+                color: #F8F8F8;
+                text-transform: uppercase;
+            }
+            @media (max-width:800px) {
+                .content-wrapper {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+            @media (max-width: 576px) {
+                .content-wrapper {
+                    padding: 5px;
+                }
+            }
+            @media (max-width: 320px) {
+                .break {
+                    display: initial;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <div class="title-wrapper">Please fill in your information:</div>
+            <form action="exercise1.php" method="POST">
+
+                <div class="input-wrapper"><input type="text" name="name" placeholder="Full name" autocomplete="off" required></div>
+                <div class="input-wrapper">
+                    <div class="gender-wrapper">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br class="break">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br class="break">
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="input-wrapper"><span>Date of birth: </span><br><input type="date" name="birth"></div>
+                <div class="input-wrapper"><input type="text" name="university" placeholder="University" autocomplete="off" required></div>               
+                <div class="input-wrapper"><input type="text" name="class" placeholder="Class" autocomplete="off" required></div>
+                <div class="input-wrapper"><input type="email" name="email" placeholder="Email address" autocomplete="off" required></div>
+                <div class="input-wrapper"><input type="text" name="phone" placeholder="Phone number" autocomplete="off" required></div>
+                <div class="input-wrapper"><span>Hobbies: </span><br>
+                    <div>
+                        <input type="checkbox" id="hobby1" name="hobbies[]" value="Reading">
+                        <label for="hobby1"> Reading books </label><br>
+                        <input type="checkbox" id="hobby2" name="hobbies[]" value="Music">
+                        <label for="hobby2"> Listening to music</label><br>
+                        <input type="checkbox" id="hobby3" name="hobbies[]" value="Movie">
+                        <label for="hobby3"> Watching movies </label><br>
+                    </div>
+                </div>
+
+                <div class="buttons-wrapper">
+                    <input type="submit" name="submit" value="Submit" />
+                    <input type="reset" name="reset" value="Reset" />
+                </div>
+            </form>            
+        </div>
+    </body>
+</html>
