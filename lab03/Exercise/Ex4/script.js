@@ -8,6 +8,7 @@ function validateName() {
   }
   return true;
 }
+
   
 function validateAddress() {
   var x = document.getElementById("address");
@@ -38,13 +39,13 @@ function validateEmail(){
 function validatePhone() {
   var x = document.getElementById("phone");
   if(x.value == "") {
-    alert("Số điện thoại là bắt buộc!");
+    alert("Số điện thoại là bắt buộc! Hợp lệ: 0xxx xxx xxx");
     x.focus();
     return false;
   }
-  var phoneCheck = new RegExp("[0-9]{9}")
-  if(phoneCheck.test(x.value)) {
-    alert("Số điện thoại không hợp lệ!")
+  var phoneCheck = /[0][0-9]{9}/;
+  if(!phoneCheck.test(x.value)) {
+    alert("Số điện thoại không hợp lệ! Dạng đúng: 0xxx xxx xxx");
     return false;
   }
   return true;
@@ -54,37 +55,44 @@ function validatePhone() {
 function validateCCCD() {
   var x = document.getElementById("identifyNumber");
   if(x.value == "") {
-    alert("Phần CCCD là bắt buộc!");
+    alert("Phần CCCD là bắt buộc! Hợp lệ: xxxx xxxx xxxx");
     x.focus();
     return false;
   }
-  var cccdCheck = new RegExp("[0-9]{12}")
-  if(cccdCheck.test(x.value)) {
-    alert("Số CCCD không hợp lệ!")
+  var cccdCheck = /[0-9]{12}/;
+  if(!cccdCheck.test(x.value)) {
+    alert("Số CCCD không hợp lệ! Dạng hợp lệ: xxxx xxxx xxxx")
     return false;
   }
   return true;
 }
 
-function validateAssurance() {
-  var x = document.getElementById("assurance");
-  if(x.checked == false) {
-    alert("Chưa cam kết!");
-    return false;
+var check = false;
+document.getElementById('assurance').onclick = function(e){
+  if (this.checked){
+       check = true;
   }
   else{
-    return true;
+       check = false;
+  }
+};
+
+function validateAssurance() {
+  if(check) return true;
+  else {
+    alert("Chưa cam kết!");
+    return false;
   }
 }
 
 function  validateForm() {
-  document.getElementById("submitButton").addEventListener("click", function () {
+  document.getElementById("submitButton").addEventListener("click", function(event) {
     if(!validateName()) return false;
     else if(!validateAddress()) return false;
     else if(!validateEmail()) return false;
     else if(!validatePhone()) return false;
     else if(!validateCCCD()) return false;
-    else if(!validateAssurance()) return false;
+    else alert("Hoàn thành đăng ký!");
   }, false);
 }
 window.addEventListener("load", validateForm(), false);
