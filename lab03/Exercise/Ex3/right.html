@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Right</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		body {background-color: #8FAEBA}
+		.title {
+			font-family: tahoma;
+			text-align: center;
+			color: steelblue;
+		}
+		
+		.container {
+			width: 80%;
+			margin-left: auto;
+			margin-right:  auto;
+			display: block;
+		}
+		.blogName {
+		    width: 100%;
+		    height: 30px;
+		    border: solid gray 1px;
+		    margin-bottom: 10px;
+		    font-family: tahoma;
+		    font-size: 17px;
+		}
+		.submitButton {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			font-size: 20px;
+			font-weight: 700;
+			background-color: steelblue;
+			padding: 10px 15px;
+			border-radius: 14px;
+			border: solid #A7C5EB 2px;
+			color: white;
+		}
+		.submitButton:hover {
+			background-color: #588da8;
+		}
+		@media (max-width: 576px) {
+			h1 {font-size: 3em;}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Make Your Blog</h1>
+		<form  id = "formName" method="get" accept-charset="utf-8">
+			<input class="blogName" type="text" name="blogName" placeholder="Enter the blog's name...">
+		</form>
+		<button class="submitButton" type="submit" name="submitButton" id="submitButton" >Submit</button>
+	</div>
+</body>
+</html>
