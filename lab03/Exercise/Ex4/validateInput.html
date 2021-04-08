@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hiến Máu Tháng 4</title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  
+  <div class="container">
+    <div class="top">
+      <h1 class="title">Đơn đăng ký tham gia hiến máu tháng 4</h1>
+    </div>
+    <div class="main">
+      <form>
+        <fieldset class="form-group">
+          <legend>Thông tin cá nhân</legend>
+          <section class="element">
+            <label for="name">Họ Tên: </label>
+            <input type="text" class="form-control" id="name" placeholder="Nguyễn Văn A...">
+          </section>
+
+          <section class="element">
+            <label for="dateOfBirth">Ngày sinh: </label>
+            <input type="date" class="form-control" id="dateOfBirth">
+          </section> <!-- end of mssv -->
+
+          <section class="element">
+            <div class="sex">
+              <label for="gender">Giới Tính:  </label>
+                <input type="radio" name="sex" id="gender" value="option1" checked>
+                Male
+                <input type="radio" name="sex" id="gender" value="option1">
+                Female
+              
+            </div>
+          </section> <!-- end of gender -->
+
+          <section class="element">
+            <label for="jobs">Nghề Nghiệp:  </label>
+            <select class="jobs">
+              <option selected>Học Sinh</option>
+              <option value="1">Sinh Viên</option>
+              <option value="2">Đang đi làm</option>
+              <option value="3">Chưa đi làm</option>
+            </select>
+          </section> <!-- end of jobs -->
+
+          <section class="element">
+            <label for="Address">Nơi ở hiện tại: </label>
+            <input type="text" name="address" id="address">
+          </section> <!-- end of Address -->
+
+          <section class="element">
+            <label for="email">Email: </label>
+            <input type="email" class="form-control" id="email" placeholder=".nguyenvanA@gmail.com">
+          </section> 
+
+          <section class="element">
+            <label for="phone">Điện Thoại: (+84) </label>
+            <input type="text" class="form-control" id="phone">
+          </section>
+
+          <section class="element">
+            <label>Số CMND/CCCD: <input type="text" class="form-control" id="identifyNumber"> </label>
+            
+            <label>Nơi cấp: <input type="text" name="" ></label>
+          </section>
+
+          <section class="element">
+            <label>Nhóm máu: <input type="text" name=""></label>
+          </section> 
+
+          <section class="element">
+            <label>Đây là lần thứ bao nhiêu bạn hiến máu?</label><br>
+            <input type="radio" name="times" value="0times" checked><span> Lần đầu hiến máu</span><br>
+            <input type="radio" name="times" value="1times"> <span>Lần 2</span><br>
+            <input type="radio" name="times" value="2times"> <span>Lần 3</span><br>
+            <input type="radio" name="times"><span>Mục khác:</span> <input type="text" name="manyTimes">
+          </section>
+        </fieldset> <!-- end personal information -->
+
+        <BR>
+
+        <p class="bigtitle">Đọc kỹ và trả lời những câu hỏi dưới đây, chọn ô trống.</p>
+
+        <fieldset>
+          <legend>Dành cho người hiến máu</legend>
+          <section class="element">
+            <p class="bigtitle">1. Từ nhỏ quý vị có bị các bệnh mạn tính:</p>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Thấp khớp, chảy máu tiêu hóa, viêm gan/vàng da, bệnh tim, huyết áp thấp/cao, bệnh thận, hen, ho kéo dài, bệnh máu, lao, ung thư...</span>
+            <p class="bigtitle">2. Trong vòng 6 tháng gần đây, Quý vị có:</p>
+            <input type="checkbox" name="choice" value=""><span>Sút cân > 4kg không rõ nguyên nhân?</span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Nổi hạch kéo dài</span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Châm cứu, phẫu thuật</span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Xăm mình, xỏ tai, lỗ mũi,...</span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Được truyền máu hoặc chế phẩm máu</span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Sử dụng ma túy, tiêm chích,...</span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Quan hệ tình dục với người nhiễm HIV hoặc người có nguy cơ lây nhiễm HIV</span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Tiêm vắc xin phòng bệnh? Loại vắc xin: <input type="text" name="vacxin"></span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Có đến/ở vùng có dịch lưu hành (COVID-19, sốt rét, Ebola, Zika,...)</span>
+            <p class="bigtitle">3. Trong vòng 01 tuần gần đây, Quý vị có: </p>
+            <input type="checkbox" name="choice" value=""><span>Bị ho, cúm, nhức đầu, sốt,...</span>
+            <br>
+            <input type="checkbox" name="choice" value=""><span>Dùng thuốc kháng sinh, Aspirin,...</span>
+            <p class="bigtitle">4.</p>
+            <p class="bigtitle"><input type="checkbox" name="choice" value=""> Quý vị hiện là đối tượng tàn tật hoặc hưởng trợ cấp tàn tật hoặc nạn nhân chất độc àu da cam không?</p>
+            <p class="bigtitle">5. Dành cho phụ nữ: </p>
+            <input type="checkbox" name="choice" value=""><span>Chị hiện có thai hoặc nuôi con dưới 12 tháng tuổi không?</span>
+            <br>
+          </section>
+        </fieldset>
+
+      </form>
+    </div>
+    <div class="footer">
+      <input type="checkbox" name="assurance" id="assurance"><span class="assurance">Tôi đã đọc, hiểu và trả lời trung thực những câu hỏi trên. Nếu tôi phát hiện ra bất cứ thông tin gì liên quan tới an toàn cho đơn vị máu tôi đã hiến, tôi sẽ liên hệ ngay với quý vị để đảm bảo an toàn cho người nhận máu của tôi.</span>
+
+      <br>
+      <br>
+
+      <button class="submit" type="submit" id="submitButton">Submit</button>
+    </div> <!-- end of footer -->
+  </div> <!-- end of container -->
+
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

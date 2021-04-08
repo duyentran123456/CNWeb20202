@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "_//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Count the Function calls</title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" charset="utf-8" async defer>
+		num = 0;
+		function myFunc() {
+			num++;
+			document.myForm.outputField.value = "Called " + num + " times";
+		}
+		window.setInterval("myFunc()", 1000);
+	</script>
+</head>
+<body>
+	
+	<form name="myForm">
+		<input type="text" name="outputField" readonly>
+	</form>
+</body>
+</html>
