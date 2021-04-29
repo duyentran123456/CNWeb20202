@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.php.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/php-project/1">
+            <name>mvcPHP</name>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>allBooks</word>
+            <word>booklist</word>
+            <word>charset</word>
+            <word>getBook</word>
+            <word>getBookList</word>
+            <word>hardcoded</word>
+            <word>html</word>
+            <word>isset</word>
+            <word>Moonwalker</word>
+            <word>php</word>
+            <word>UTF</word>
+            <word>viewbook</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>
