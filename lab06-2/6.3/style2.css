@@ -1,0 +1,21 @@
+.header {
+	background-color: red;
+	width: 100%;
+}
+.main-content {
+	background-color: white;
+	width: 80%;
+	float:left;
+	height: 500px;
+}
+.side-bar {
+	background-color: yellow;
+	width: 20%;
+	float:right;
+	height: 500px;
+}
+.footer {
+	background-color: blue;
+	width: 100%;
+	clear: both;
+}
