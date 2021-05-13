@@ -139,7 +139,11 @@ a.listitem:hover li {background-color: #ffc288;}
     margin-top: 12px;
     margin-bottom: 25px;
 }
-.row .product a {padding: 10px 30px;border-radius: 20px;border: 2px solid #ff7b54;text-decoration: none;color: black;transition: 0.5s;}
+.row .product a {padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid #ff7b54;
+    text-decoration: none;
+    color: black;transition: 0.5s;}
 
 a.view:hover {
     background: #ffb26b;
@@ -156,6 +160,8 @@ a.view:hover {
 .footer .get-in-touch {
     margin-top: 50px;
     font-size: 50px;
+    padding-bottom: 2%;
+    position: relative;
 }
 
 .get-in-touch:after {
@@ -166,6 +172,7 @@ a.view:hover {
     display: block;
     margin-left: -25px;
     left: 50%;
+    bottom: 0;
     position: absolute;
 }
 .footer .contact {
@@ -182,6 +189,7 @@ a.view:hover {
     }
     .footer .get-in-touch{
         font-size: 35px;
+        padding-bottom: 5%;
     }
     .row .product{
         width: 45%;
