@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--student.xml-->
+<student>
+    <name>Nguyen</name>
+    <ID>20183867</ID>
+    <birthday>2000/10/08</birthday>
+    <address>Hai Duong</address>
+    <email> anh,nh@sis.hust.edu.vn </email>
+    <phone> 033123 </phone>
+    <school>HUST</school>
+    <branch>IT3</branch>
+    <class>IT3-01</class>
+    <sex>female</sex>
+    <cpa>2.0</cpa>
+</student>

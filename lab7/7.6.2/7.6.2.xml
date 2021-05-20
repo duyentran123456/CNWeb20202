@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+<pet> 
+    <name>Polly Parrot</name> 
+    <age>3</age> 
+    <species>parrot</species> 
+    <parents> 
+        <mother>Pia Parrot</mother> 
+        <father>Peter Parrot</father> 
+    </parents> 
+</pet> 
+
+<name>Polly Parrot</name><age>3</age><species>parrot</species><parents><mother>Pia Parrot</mother><father>Peter Parrot</father></parents></root>
